@@ -1,10 +1,51 @@
 {
-    "__comment": "This model was created with freundTech's Blender2Minecraft converter (BETA)",
+    "__createdwith": "opl's Model Creator",
+    "ambientocclusion": false,
     "textures": {
-        "leave"   : "blocks/leaves_spruce",
-        "particle": "#leave"
+        "leave": "blocks/leaves_spruce",
+        "particle": "blocks/leaves_spruce"
     },
     "elements": [
+        {
+            "from": [0,8,0],
+            "to": [16,8,16],
+            "faces": {
+                "up": { "texture": "#leave" },
+                "down": { "texture": "#leave" }
+            }
+        },
+        {
+            "from": [0,0,0],
+            "to": [0,16,16],
+            "faces": {
+                "west": { "texture": "#leave", "cullface": west },
+                "east": { "texture": "#leave" }
+            }
+        },
+        {
+            "from": [16,0,0],
+            "to": [16,16,16],
+            "faces": {
+                "west": { "texture": "#leave" },
+                "east": { "texture": "#leave", "cullface": east }
+            }
+        },
+        {
+            "from": [0,0,16],
+            "to": [16,16,16],
+            "faces": {
+                "north": { "texture": "#leave" },
+                "south": { "texture": "#leave", "cullface": south }
+            }
+        },
+        {
+            "from": [0,0,0],
+            "to": [16,16,0],
+            "faces": {
+                "north": { "texture": "#leave", "cullface": north },
+                "south": { "texture": "#leave" }
+            }
+        },
         {   "from"    : [  0,  0, 8.8 ],
             "to"      : [ 16, 16, 8.8 ],
             "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -22.5, "rescale": true },
@@ -67,38 +108,6 @@
             "shade"   : false,
             "faces"   : {
                 "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" }
-            }
-        },
-        {   "from" : [  0,  0, 15.99 ],
-            "to"   : [ 16, 16, 15.99 ],
-            "shade": false,
-            "faces": {
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" },
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" }
-            }
-        },
-        {   "from" : [  0,  0, 0.01 ],
-            "to"   : [ 16, 16, 0.01 ],
-            "shade": false,
-            "faces": {
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" },
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" }
-            }
-        },
-        {   "from" : [ 0.01,  0,  0 ],
-            "to"   : [ 0.01, 16, 16 ],
-            "shade": false,
-            "faces": {
-                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" },
-                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" }
-            }
-        },
-        {   "from" : [ 15.99,  0,  0 ],
-            "to"   : [ 15.99, 16, 16 ],
-            "shade": false,
-            "faces": {
-                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" },
-                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#leave" }
             }
         }
     ]
